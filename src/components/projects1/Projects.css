@@ -1,0 +1,200 @@
+/* Assuming you have a global reset or base styles */
+section#projects {
+    width: 100%;
+    /* Equivalent to w-full */
+    padding-top: 5rem;
+    /* Equivalent to py-20 */
+    padding-bottom: 5rem;
+    /* Equivalent to py-20 */
+    border-bottom: 1px solid #000;
+    /* Equivalent to border-b-[1px] border-b-black */
+}
+
+.projects-title {
+    display: flex;
+    /* Equivalent to flex */
+    justify-content: center;
+    /* Equivalent to justify-center */
+    align-items: center;
+    /* Equivalent to items-center */
+    text-align: center;
+    /* Equivalent to text-center */
+}
+
+
+.projects-grid {
+    display: grid;
+    /* Equivalent to grid */
+    grid-template-columns: 1fr;
+    /* Equivalent to grid-cols-1 */
+    gap: 1.5rem;
+    /* Equivalent to gap-6 */
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Equivalent to md:grid-cols-2 */
+        gap: 3.5rem;
+        /* Equivalent to xl:gap-14 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Equivalent to xl:grid-cols-3 */
+    }
+}
+
+.project-card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project-card-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+
+
+
+.projects-card {
+    width: 100%;
+    /* Equivalent to w-full */
+    padding: 1rem;
+    /* Equivalent to p-4 */
+    padding-left: 3rem;
+    /* Equivalent to xl:px-12 */
+    padding-right: 3rem;
+    /* Equivalent to xl:px-12 */
+    height: auto;
+    /* Equivalent to h-auto */
+    padding-top: 2.5rem;
+    /* Equivalent to xl:py-10 */
+    padding-bottom: 2.5rem;
+    /* Equivalent to xl:py-10 */
+    border-radius: 1rem;
+    /* Equivalent to rounded-lg */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Equivalent to shadow-shadowOne */
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #f5f5f5, #202327);
+    /* Equivalent to bg-gradient-to-r from-bodyColor to-[#202327] */
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.projects-card:hover {
+    background-image: linear-gradient(to bottom, #202327, #202327);
+}
+
+.image-container {
+    width: 100%;
+    /* Equivalent to w-full */
+    height: 80%;
+    /* Equivalent to h-[80%] */
+    overflow: hidden;
+    /* Equivalent to overflow-hidden */
+    border-radius: 1rem;
+    /* Equivalent to rounded-lg */
+}
+
+.image-container img {
+    width: 100%;
+    /* Equivalent to w-full */
+    height: 15rem;
+    /* Equivalent to h-60 */
+    object-fit: cover;
+    /* Equivalent to object-cover */
+    transition: transform 0.3s ease;
+    /* Equivalent to group-hover:scale-110 duration-300 */
+    cursor: pointer;
+}
+
+.projects-card:hover img {
+    transform: scale(1.1);
+    /* Equivalent to group-hover:scale-110 */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    /* Equivalent to text-base */
+    text-transform: uppercase;
+    /* Equivalent to uppercase */
+    color: #ff014f;
+    /* Equivalent to text-designColor */
+    font-weight: normal;
+    /* Equivalent to font-normal */
+}
+
+.card-icons {
+    display: flex;
+    /* Equivalent to flex */
+    gap: 0.5rem;
+    /* Equivalent to gap-2 */
+}
+
+.card-icon {
+    font-size: 1.25rem;
+    /* Equivalent to text-lg */
+    width: 2.5rem;
+    /* Equivalent to w-10 */
+    height: 2.5rem;
+    /* Equivalent to h-10 */
+    border-radius: 50%;
+    /* Equivalent to rounded-full */
+    background-color: #000;
+    /* Equivalent to bg-black */
+    display: inline-flex;
+    /* Equivalent to inline-flex */
+    justify-content: center;
+    /* Equivalent to justify-center */
+    align-items: center;
+    /* Equivalent to items-center */
+    color: #ccc;
+    /* Equivalent to text-gray-400 */
+    transition: color 0.3s ease;
+    /* Equivalent to duration-300 */
+    cursor: pointer;
+}
+
+.card-icon:hover {
+    color: #ff014f;
+    /* Equivalent to hover:text-designColor */
+}
+
+.card-description {
+    font-size: 0.875rem;
+    /* Equivalent to text-sm */
+    line-height: 1.5;
+    /* Equivalent to leading-normal */
+    color: #666666;
+    /* Equivalent to text-gray-400 */
+    margin-top: 0.75rem;
+    /* Equivalent to mt-3 */
+    transition: color 0.3s ease;
+    /* Equivalent to duration-300 */
+}
+
+.card-description:hover {
+    color: #fff;
+    /* Equivalent to hover:text-gray-100 */
+}
