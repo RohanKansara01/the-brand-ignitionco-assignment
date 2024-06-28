@@ -41,7 +41,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
 

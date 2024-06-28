@@ -18,7 +18,7 @@ export const Nav = styled.div`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: black;
+  color: #fff;
   // #854ce6
   display: flex;
   gap: 30px;
@@ -31,8 +31,8 @@ export const NavLink = styled(ScrollLink)`
   &:hover {
     // color: #7957d5;
     box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px 0px;
-    background-color: #0096FF;
-    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 3px;
     color: black;
     
   transform: scale(1.05);
@@ -46,14 +46,14 @@ export const Logo = styled(LinkRouter)`
     padding: 5px 10px;
     //background-color: #854ce6;
     border-radius: 20px;
-    color: black;
+    color: #fff;
     }
   }
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
-  color: #000000;
+  color: #fff;
   font-size: 1.8rem;
   cursor: pointer;
   @media screen and (max-width: 820px) {

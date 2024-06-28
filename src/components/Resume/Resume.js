@@ -4,7 +4,7 @@ import { Button } from "./ResumeElements";
 export const Resume1 = () => {
   const openResume = () => {
      window.open(
-      "https://drive.google.com/file/d/1OtxDnlDZ_6pmqrIKpttXBHqK9_CrnEVZ/view?usp=sharing"
+      "https://drive.google.com/file/d/1uGufVU_tCx2J1EjjZ0eptQ6Mr2lt6tN2/view?usp=sharing"
         );
   };
   return (
@@ -32,7 +32,7 @@ export const Resume1 = () => {
 export const Resume2 = () => {
   const openResume = () => {
      window.open(
-          "https://drive.google.com/file/d/1OtxDnlDZ_6pmqrIKpttXBHqK9_CrnEVZ/view?usp=sharing"
+          "https://drive.google.com/file/d/1uGufVU_tCx2J1EjjZ0eptQ6Mr2lt6tN2/view?usp=sharing"
         );
   };
 

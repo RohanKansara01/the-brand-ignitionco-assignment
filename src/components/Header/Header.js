@@ -4,7 +4,7 @@ import { Nav, Logo, NavLink, Bars, NavMenu, NavBtn } from "./HeaderElements";
 
 const Header = ({ toggle }) => {
   return (
-    <Nav id="nav-menu">
+    <Nav id="nav-menu" style={{backgroundColor:"#212428"}}>
       <Logo to="./">
         <h1 className="nav-link home">Rohan</h1>
       </Logo>

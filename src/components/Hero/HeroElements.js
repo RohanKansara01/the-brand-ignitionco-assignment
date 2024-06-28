@@ -28,7 +28,7 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const HeroWrapper = styled.div`
   display: flex;
-  padding-top:70px;
+  margin-top:-20px;
   flex-direction: row;
   gap:5%;
   margin-bottom: 10px;

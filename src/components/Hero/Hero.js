@@ -23,8 +23,8 @@ function Hero() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <HeroContainer>
-        {/* <HeroWrapper id="home">
-          <HeroLeft>
+        <HeroWrapper id="home">
+          {/* <HeroLeft>
             <h1>Hi, I'm Rohan Kansara</h1>
             <h5>Full Stack Web Developer</h5>
             <p>
@@ -42,8 +42,8 @@ function Hero() {
           </HeroLeft>
           <HeroRight>
             <Image className="home-img" src={profile} alt="man-svgrepo" />
-          </HeroRight>
-        </HeroWrapper> */}
+          </HeroRight> */}
+        </HeroWrapper>
       </HeroContainer>
     </main>
   );
